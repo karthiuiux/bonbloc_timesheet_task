@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BONbLOC Time Sheet App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./style/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <span>TS</span>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="" aria-current="page" href="#">
+            <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.2769 1.48515H11.9105C11.4997 1.48515 11.168 1.15346 11.168 0.742574C11.168 0.331683 11.4997 0 11.9105 0H19.2769C19.6878 0 20.0194 0.331683 20.0194 0.742574C20.0194 1.15346 19.6878 1.48515 19.2769 1.48515Z" fill="white" />
+              <path d="M15.5939 24C12.6236 24 9.76714 22.7475 7.75724 20.5594C7.48002 20.2574 7.49982 19.7871 7.8018 19.5099C8.10378 19.2327 8.57408 19.2525 8.8513 19.5545C10.584 21.4357 13.0394 22.5149 15.5939 22.5149C20.6434 22.5149 24.7523 18.406 24.7523 13.3565C24.7523 8.30695 20.6434 4.19804 15.5939 4.19804C13.0048 4.19804 10.5246 5.302 8.7919 7.22774C8.51962 7.53467 8.04932 7.55942 7.74239 7.2822C7.43546 7.00992 7.41566 6.53962 7.68794 6.23269C9.70279 3.99507 12.584 2.71289 15.5939 2.71289C21.4602 2.71289 26.2374 7.49012 26.2374 13.3565C26.2374 19.2228 21.4602 24 15.5939 24Z" fill="white" />
+              <path d="M15.5941 6.65348C15.1832 6.65348 14.8516 6.3218 14.8516 5.91091V3.45546C14.8516 3.04457 15.1832 2.71289 15.5941 2.71289C16.005 2.71289 16.3367 3.04457 16.3367 3.45546V5.91091C16.3367 6.3218 16.005 6.65348 15.5941 6.65348Z" fill="white" />
+              <path d="M15.5941 24C15.1832 24 14.8516 23.6684 14.8516 23.2575V20.802C14.8516 20.3911 15.1832 20.0594 15.5941 20.0594C16.005 20.0594 16.3367 20.3911 16.3367 20.802V23.2575C16.3367 23.6684 16.005 24 15.5941 24Z" fill="white" />
+              <path d="M25.4949 14.099H23.0394C22.6286 14.099 22.2969 13.7674 22.2969 13.3565C22.2969 12.9456 22.6286 12.6139 23.0394 12.6139H25.4949C25.9058 12.6139 26.2375 12.9456 26.2375 13.3565C26.2375 13.7674 25.9058 14.099 25.4949 14.099Z" fill="white" />
+              <path d="M15.5941 14.099C15.1832 14.099 14.8516 13.7673 14.8516 13.3564V8.58413C14.8516 8.17324 15.1832 7.84155 15.5941 7.84155C16.005 7.84155 16.3367 8.17324 16.3367 8.58413V13.3564C16.3367 13.7673 16.005 14.099 15.5941 14.099Z" fill="white" />
+              <path d="M11.3366 9.28715H0.742574C0.331683 9.28715 0 8.95547 0 8.54458C0 8.13369 0.331683 7.802 0.742574 7.802H11.3366C11.7475 7.802 12.0792 8.13369 12.0792 8.54458C12.0792 8.95547 11.7475 9.28715 11.3366 9.28715Z" fill="white" />
+              <path d="M11.3366 14.099H0.742574C0.331683 14.099 0 13.7674 0 13.3565C0 12.9456 0.331683 12.6139 0.742574 12.6139H11.3366C11.7475 12.6139 12.0792 12.9456 12.0792 13.3565C12.0792 13.7674 11.7475 14.099 11.3366 14.099Z" fill="white" />
+              <path d="M11.3366 18.9108H0.742574C0.331683 18.9108 0 18.5791 0 18.1682C0 17.7573 0.331683 17.4257 0.742574 17.4257H11.3366C11.7475 17.4257 12.0792 17.7573 12.0792 18.1682C12.0792 18.5791 11.7475 18.9108 11.3366 18.9108Z" fill="white" />
+              <path d="M18.4654 14.099H15.5941C15.1832 14.099 14.8516 13.7674 14.8516 13.3565C14.8516 12.9456 15.1832 12.6139 15.5941 12.6139H18.4654C18.8763 12.6139 19.208 12.9456 19.208 13.3565C19.208 13.7674 18.8763 14.099 18.4654 14.099Z" fill="white" />
+            </svg> Timesheet </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-nav">
+      <div class="logo">
+        <span>TS</span>
+      </div>
+    </div>
+    <!-- wrapper -->
+    <div class="wrapper">
+      <!-- Top Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid justify-content-between d-flex">
+          <a class="navbar-brand" href="#">DETAILS</a>
+          <div class="nav-left">
+            <form class="nosubmit me-4">
+              <input class="nosubmit" type="search" placeholder="Search...">
+            </form>
+            <!-- notification -->
+            <div class="notification me-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.73 21C13.5542 21.3031 13.3018 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning"> 3 <span class="visually-hidden">unread messages</span>
+              </span>
+            </div>
+            <!-- profile -->
+            <div class="dropdown">
+              <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="avatar avatar-xs me-2">
+                  <span class="avatar-initial rounded-circle bg-label-primary">JD</span>
+                </div>
+                <div class="name">
+                  <h5>John Doe</h5>
+                  <p>UX Specialist</p>
+                </div>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- content - body -->
+      <div class="container-fluid main">
+        <!-- Filter and top actions -->
+        <div class="top_actions">
+          <div class="filter">
+            <div class="icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18M3 6H21M9 18H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="did-floating-label-content">
+              <select class="did-floating-select">
+                <option value="1">2023</option>
+                <option value="2">2024</option>
+                <option value="3">2025</option>
+              </select>
+              <label class="did-floating-label">Period</label>
+            </div>
+            <!-- onclick="this.setAttribute('value', this.value);" onchange="this.setAttribute('value', this.value);" value="" -->
+            <div class="did-floating-label-content">
+              <select class="did-floating-select">
+                <option value="1">All</option>
+                <option value="2">Project 1</option>
+                <option value="3">Project 2</option>
+              </select>
+              <label class="did-floating-label">Project</label>
+            </div>
+            <div class="did-floating-label-content">
+              <select class="did-floating-select">
+                <option value="1">All</option>
+                <option value="2">Task 1</option>
+                <option value="3">Task 2</option>
+              </select>
+              <label class="did-floating-label">Task</label>
+            </div>
+          </div>
+          <div class="action">
+            <button type="button" class="btn btn-light">View Approver Info</button>
+            <button type="button" class="btn btn-dark">Submit for Approval</button>
+          </div>
+        </div>
+        <!--overview  -->
+        <div class="overview">
+          <div class="left">
+            <button type="button" class="btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="#A2A6AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg> Prev Week </button>
+            <span>Aug 7 - Aug 11</span>
+            <button type="button" class="btn">Next Week <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="#A2A6AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="right">
+            <label>Billable: 25Hrs</label>
+            <label>Non-Billable: 15Hrs</label>
+            <label>Time Off: 15Hrs</label>
+            <label>Time Off: 4Hrs</label>
+            <label>OT: 4Hrs 45 mins</label>
+            <div class="d-flex">
+              <button type="button" class="btn btn-outline-primary  btn-sm">Pending Submission</button>
+              <div class="total">
+                <span>Week Total</span>
+                <strong>48:45:10</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- time table -->
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="main">
+              <tr>
+                <th scope="col" colspan="2" class="border-end-0">Task Details</th>
+                <th scope="col">
+                  <span>Sunday</span>
+                  <span>06 Aug 2023</span>
+                  <strong>4 hrs 15 mins</strong>
+                </th>
+                <th scope="col">
+                  <span>Monday</span>
+                  <span>07 Aug 2023</span>
+                  <strong>8 hrs 30 mins</strong>
+                </th>
+                <th scope="col">
+                  <span>Tuesday</span>
+                  <span>08 Aug 2023</span>
+                  <strong>5 hrs 55 mins</strong>
+                </th>
+                <th scope="col">
+                  <span>Wednesday</span>
+                  <span>09 Aug 2023</span>
+                  <strong>8 hrs 00 mins</strong>
+                </th>
+                <th scope="col">
+                  <span>Thursday</span>
+                  <span>10 Aug 2023</span>
+                  <strong>8 hrs 30 mins</strong>
+                </th>
+                <th scope="col">
+                  <span>Friday</span>
+                  <span>11 Aug 2023</span>
+                  <strong>1 hrs 30 mins</strong>
+                </th>
+                <th scope="col">
+                  <span>Saturday</span>
+                  <span>12 Aug 2023</span>
+                  <strong>5 hrs 15 mins</strong>
+                </th>
+                <th scope="col" class="text-center"> Action </th>
+              </tr>
+            </thead>
+            <thead>
+              <tr>
+                <th scope="col" class="border-end-0">
+                  <span class="d-block w-100">Select Project</span>
+                </th>
+                <th scope="col" class="border-start-0">
+                  <span class="d-block w-100  ms-2">Select Task </span>
+                </th>
+                <th scope="col" colspan="8" class="text-center">Enter Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-end-0">
+                  <select class="form-select table-select" aria-label="Default select example">
+                    <option selected>Rythm Time Tracker</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td class="border-start-0">
+                  <select class="form-select table-select" aria-label="Default select example">
+                    <option selected>Document Creation</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="01:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="04:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="00:00:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="04:00:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="05:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="00:45:00" />
+                </td>
+                <td class="border-end-0">
+                  <input type="time" class="form-control" value="00:00:00" />
+                </td>
+                <td class="action-column">
+                  <button type="button" class="btn btn-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6H5ZM8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17" stroke="#817D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button type="button" class="btn btn-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 17L12 22L22 17M2 12L12 17L22 12M12 2L2 7L12 12L22 7L12 2Z" stroke="#817D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border-end-0">
+                  <select class="form-select table-select" aria-label="Default select example">
+                    <option selected>Rasto Commerce</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td class="border-start-0">
+                  <select class="form-select table-select" aria-label="Default select example">
+                    <option selected>Data Migration</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="01:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="04:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="00:00:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="04:00:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="05:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="00:45:00" />
+                </td>
+                <td class="border-end-0">
+                  <input type="time" class="form-control" value="00:00:00" />
+                </td>
+                <td class="action-column">
+                  <button type="button" class="btn btn-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6H5ZM8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17" stroke="#817D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button type="button" class="btn btn-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 17L12 22L22 17M2 12L12 17L22 12M12 2L2 7L12 12L22 7L12 2Z" stroke="#817D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border-end-0">
+                  <select class="form-select table-select" aria-label="Default select example">
+                    <option selected>SCANR</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td class="border-start-0">
+                  <select class="form-select table-select" aria-label="Default select example">
+                    <option selected>Unit Testing</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="01:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="04:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="00:00:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="04:00:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="05:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="00:45:00" />
+                </td>
+                <td class="border-end-0">
+                  <input type="time" class="form-control" value="00:00:00" />
+                </td>
+                <td class="action-column">
+                  <button type="button" class="btn btn-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6H5ZM8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17" stroke="#817D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button type="button" class="btn btn-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 17L12 22L22 17M2 12L12 17L22 12M12 2L2 7L12 12L22 7L12 2Z" stroke="#817D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border-end-0">
+                  <select class="form-select table-select" aria-label="Default select example">
+                    <option selected>ORG Project</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td class="border-start-0">
+                  <select class="form-select table-select" aria-label="Default select example">
+                    <option selected>Internal Develop</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="01:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="04:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="00:00:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="04:00:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="05:30:00" />
+                </td>
+                <td>
+                  <input type="time" class="form-control" value="00:45:00" />
+                </td>
+                <td class="border-end-0">
+                  <input type="time" class="form-control" value="00:00:00" />
+                </td>
+                <td class="action-column">
+                  <button type="button" class="btn btn-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6H5ZM8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17" stroke="#817D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button type="button" class="btn btn-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 17L12 22L22 17M2 12L12 17L22 12M12 2L2 7L12 12L22 7L12 2Z" stroke="#817D7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button type="button" class="btn btn-outline-primary  btn-sm">
+          <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_17_19297)">
+              <path d="M8 4.00001V8.00001L10.6667 9.33334M14.6667 8.00001C14.6667 11.6819 11.6819 14.6667 8 14.6667C4.3181 14.6667 1.33333 11.6819 1.33333 8.00001C1.33333 4.31811 4.3181 1.33334 8 1.33334C11.6819 1.33334 14.6667 4.31811 14.6667 8.00001Z" stroke="#1A5BF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_17_19297">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg> Add Time </button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
